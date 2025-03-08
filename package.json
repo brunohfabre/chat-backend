@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/http/server.ts"
+    "dev": "tsx watch --env-file .env src/http/server.ts",
+    "build": "tsup src --out-dir dist",
+    "start": "node dist/http/server.js"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "prisma": "6.4.1",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.3"
   }
 }
