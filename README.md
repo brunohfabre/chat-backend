@@ -21,7 +21,13 @@ cd chat-backend
 npm install
 ```
 
-4. Inicie o projeto:
+4. Crie o banco de dados:
+```sh
+npx prisma migrate deploy
+npx prisma generate
+```
+
+5. Inicie o projeto:
 
 ```sh
 npm run dev
